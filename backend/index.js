@@ -8,7 +8,10 @@ const PORT = 4000
 
 
 //database connection
-mongoose.connect(MONGO_URI)
+mongoose.connect(MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 .then(()=>{
     console.log("mongodb connected");
 }).catch((err)=>{
