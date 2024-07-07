@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view users</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <div style="margin-top: 4vh;">
+    <a style="text-decoration: none; color: blue; margin: 10px 10px; padding: 10px;" href="/">-Back to home</a>
+    </div>
+
+    <div class="users">
+        <div class="user-fields">
+
+            <% user.forEach(function(user){ %>
+        <div class="user-cont">
+            <div class="user-container">
+           
+                <h2 id="name"><%= user.name %></h1>
+                <h3 id="occupation"><%= user.occupation %></h2>
+                <h4 id="email"><%= user.email %></h2>
+                <h3 id="age"><%= user.age %></h2>
+            </div>
+
+            <div class="button-container">
+                <a href="/edit/<%= user._id%>" id="edit-btn">Edit</a>
+                <a href="/delete/<%= user._id%>"  id="dlt-btn">Delete</a>
+            </div>
+        </div>
+            <% })%>
+
+        </div>
+    </div>
+</body>
+
+</html>

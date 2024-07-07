@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(235, 231, 231); color: #212121; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div class="heading" style="display: flex; text-align: center; justify-content: center; align-items: center;">
+    <h1>SIMPLE CRUD PROJECT USING : NODE.JS , MONGODB , EXPRESS.JS & EJS</h1>
+    </div>
+    <br>
+    <br>
+
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <form action="/create" method="get" style="display: flex; flex-direction: column; gap: 10px;">
+
+            <input required style="border: none; text-align: center; border-radius: 0.2rem; height: 1.5rem; width: 200px;" type="text" placeholder="name" name="name">
+            <input required style="border: none; text-align: center; border-radius: 0.2rem; height: 1.5rem; width: 200px;" type="text" placeholder="occupation" name="occupation">
+            <input required style="border: none; text-align: center; border-radius: 0.2rem; height: 1.5rem; width: 200px;" type="email" placeholder="example@email.com" name="email">
+            <input required style="border: none; text-align: center; border-radius: 0.2rem; height: 1.5rem; width: 200px;" type="number" placeholder="age" name="age">
+            <button type="submit" style="text-decoration: none; text-transform: uppercase; color: #212121; background-color: #478CCF; padding: 8px; border-radius: 1rem; font-size: small; border: none; cursor: pointer;">Add User</button>
+            <button type="reset" style="text-decoration: none; text-transform: uppercase; color: #212121; background-color: red; padding: 8px; border-radius: 1rem; font-size: small; border: none; cursor: pointer;">Reset</button>
+
+        </form>
+
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 10vh; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <a href="/read" method="get" style="text-decoration: none; text-transform: uppercase; color: #212121; background-color: #fff; border: 2px solid #77E4C8; padding: 8px; border-radius: 1rem; font-size: small;" >view users</a>
+    </div>
+</body>
+
+</html>

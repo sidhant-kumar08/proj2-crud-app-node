@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(235, 231, 231); color: #fff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <div style="margin-top: 4vh; display: flex; justify-content: space-between;">
+        <a style="text-decoration: none; color: blue; margin: 10px 10px; padding: 10px;" href="/">-Back to home</a>
+        <a style="text-decoration: none; color: blue; margin: 10px 10px; padding: 10px;" href="/read">-Back to Users</a>
+        </div>
+    
+    <br>
+    <br>
+
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <form action="/update/<%= user._id %>" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+
+            <input required style="border: none; text-align: center; border-radius: 0.2rem; height: 1.5rem; width: 200px;" type="text" placeholder="name" name="name" value="<%= user.name %>">
+            <input required style="border: none; text-align: center; border-radius: 0.2rem; height: 1.5rem; width: 200px;" type="text" placeholder="occupation" name="occupation" value="<%= user.occupation %>">
+            <input required style="border: none; text-align: center; border-radius: 0.2rem; height: 1.5rem; width: 200px;" type="email" placeholder="example@email.com" name="email" value="<%= user.email %>">
+            <input required style="border: none; text-align: center; border-radius: 0.2rem; height: 1.5rem; width: 200px;" type="number" placeholder="age" name="age" value="<%= user.age %>">
+            <button type="submit" style=" border: none; text-decoration: none; text-transform: uppercase; color: #212121; background-color: rgb(21, 214, 21); padding: 8px; border-radius: 1rem; font-size: small;">Update user</button>
+            
+           
+            
+
+        </form>
+
+    </div>
+
+    
+</body>
+
+</html>
