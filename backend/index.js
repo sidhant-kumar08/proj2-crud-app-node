@@ -8,7 +8,7 @@ const PORT = 4000
 
 
 //database connection
-mongoose.connect(`mongodb://localhost:27017/node-project`)
+mongoose.connect(MONGO_URI)
 .then(()=>{
     console.log("mongodb connected");
 }).catch((err)=>{
